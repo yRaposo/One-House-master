@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>  
+
+    <title>One House</title>
+</head>
+<body>
+    <!-- Barra de Acessibilidade!-->
+    <div class="acessibilidade flex-container">
+        <ul class="atalhos">
+            <li><a href="#conteudo" accesskey="1" title="Ir para a área de conteúdo">Ir para o conteúdo [1]</a> </li>
+            <li><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Ir para o menu [2]</a></li>
+            <li><a href="#rodape" accesskey="3" title="Ir para o rodapé">Ir para o rodapé [3]</a></li>
+        </ul>
+        <ul class="links_access">
+            <li><a href="acessibilidade.html">Acessibilidade</a></li>
+            <li><a href="javascrip:void(0);" id="contraste">Contraste</a></li>
+            <li><a href="javascrip:void(0);" id="semcontraste">Sem contraste</a></li>
+            <li><a href="javascrip:void(0);" id="fontemais">A+</a></li>
+            <li><a href="javascrip:void(0);" id="fontemenos">A-</a></li>
+        </ul>
+    </div>
+    <!-- fim da Barra de Acessibilidade!-->
+    
+    <!--Divisão de cima para o icones-->
+    <nav>
+        <a href="../html/match.html" title="Voltar ao inicio"> <img src="../imagens/Logo.png" alt="Logo One House nas cores amarelho, azul e branco"></a>
+    </nav>
+
+    <header>
+        <!--Inicio Libras-->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script> 
+          <!--Fim de libras-->
+
+
+    </header>
+
+    <main>
+        <img src="" alt="">foto de perfil <br>
+
+        <h1>Nome do perfil</h1>
+
+        <h2>Bio do perfil</h2>
+
+        <button>seguidor</button> 
+        <button>seguidores</button><br>
+        <button> Editar perfil</button>
+        <div>
+            <button>Postagens</button>
+            <button>Doações</button>
+            <button>Favoritos</button>
+        </div>
+    </main>
+    <footer class="flex-container" id="rodape"> <!--Rodafoot-->
+        <p>Desenvolvimento por One House<br>
+            Todos os direitos reservados&copy; 2022
+
+
+        </p>
+
+</body>
+</html>
