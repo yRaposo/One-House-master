@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One House</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>  
+</head>
+<body>
+
+    <!-- Barra de Acessibilidade!-->
+    <div class="acessibilidade flex-container">
+        <ul class="atalhos">
+            <li><a href="#conteudo" accesskey="1" title="Ir para a área de conteúdo">Ir para o conteúdo [1]</a> </li>
+            <li><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Ir para o menu [2]</a></li>
+            <li><a href="#rodape" accesskey="3" title="Ir para o rodapé">Ir para o rodapé [3]</a></li>
+        </ul>
+        <ul class="links_access">
+            <li><a href="acessibilidade.html">Acessibilidade</a></li>
+            <li><a href="javascrip:void(0);" id="contraste">Contraste</a></li>
+            <li><a href="javascrip:void(0);" id="semcontraste">Sem contraste</a></li>
+            <li><a href="javascrip:void(0);" id="fontemais">A+</a></li>
+            <li><a href="javascrip:void(0);" id="fontemenos">A-</a></li>
+        </ul>
+    </div>
+    <!-- fim da Barra de Acessibilidade!-->
+
+    <!--Inicio cabeçalho-->
+    <div id=back>
+    <header>
+         
+        <img id="logo" src="../imagens/Logo.png" alt="Logo One House em amarelo branco e azul">
+        <h1>One House</h1>
+
+         <!--Inicio Libras-->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script> 
+          <!--Fim de libras-->
+
+    </header>
+    <!--Fim cabeçalho-->
+
+    <main>
+
+        <!--Inicio do formulario-->
+        <form action="" method="post" name="login" id="login">
+            <fieldset>
+                <label for="email/usuario" class="required">Nome</label><br>
+                <input type="text" name="user_name" id="nome" placeholder=""><br>
+
+                <label for="email" class="required">Email</label><br>
+                <input type="text" name="email/usuario" id="email/usuario" placeholder=""><br>
+
+                <label for="data" class="required">Data de nascimento</label><br>
+                <input type="date" name="data" id="data" required><br>
+
+                <label for="senha">Senha</label><br>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha"><br>
+
+                <label for="confirmar">Confirmar senha</label><br>
+                <input type="password" name="senha" id="senha" placeholder=""><br>
+
+                <input type="checkbox" id="termos">termos</input> <!--Transformar em checkbox--> <br>
+
+                <button>Cadastrar</button><br>
+
+            </fieldset>
+          </form>
+        <!--Fim Formulario-->
+
+    </main>
+</div>
+
+    <footer class="flex-container" id="rodape"> <!--Rodafoot-->
+        <p>Desenvolvimento por One House<br>
+            Todos os direitos reservados&copy; 2022
+
+
+        </p>
+
+
+    </footer>
+</body>
+</html>

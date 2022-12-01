@@ -1,0 +1,221 @@
+*{
+                  margin: 0;
+                  padding: 0;
+              }
+
+              #link{
+                color: #F2A92F;
+              }
+
+              body
+              {
+
+                  font-size: 14px;
+                  
+              }
+
+              #back{
+                position: absolute;
+                background-image: linear-gradient(#1f4690, #152361);
+                height: 100%;
+                width: 100%;
+              }
+
+              .flex-container
+              {
+                  display: flex;
+                  width: 100%;
+              }
+
+/*------BARRA DE ACESSIBILIDADE-----*/
+              .acessibilidade
+              {
+                  background-color: #fff;
+                  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+                  font-size: 1em;
+              }
+              #logo
+              {
+                transform: translate(-50%);
+                  margin-left: 50%;
+                  margin-top: 5%;
+                  height: 90px;
+              }
+              h1
+              {
+                  text-align: center;
+                  font-family: Agrandir Grand Heavy;
+                  font-size: 2.5rem;
+                  color: #F2A92F;
+              }
+
+              .atalhos, .links_access
+              {
+                  list-style: none;
+                  display: inline-flex;
+                  padding: 5px;
+              }
+              .atalhos li, .links_access li
+              {
+                  padding-left: 10px;
+              }
+
+              .links_access
+              {
+                  margin-left: 60%;
+              }
+
+/*------FORMULÁRIO-------*/
+              form
+              {
+                color: #FFF;
+                font-family: roboto;
+                margin-top: 20px;
+                align-self: center;
+              }
+              label, legend
+              {
+                  font-size: 0.9em;
+              }
+              input, select, textarea
+              {
+                  padding: 10px;
+                  border-radius: 15px;
+                  padding-left: 10px;
+                  /*corrigido*/
+                  
+              }
+              fieldset
+              {
+                 /*corrigido*/
+                  border-color: #F2A92F;
+                  border-radius: 15px;
+                  padding: 30px;/*corrigido*/
+                  margin: auto;
+                  position: absolute;
+                  left: 50%;
+                  transform: translate(-50%);
+                  
+              }
+
+              #termos
+              { 
+                  width: 5%; /*corrigido*/
+              }
+
+              button
+              {
+                  margin-left: ;
+                  width: ; /*corrigido*/
+                  padding: 10px;
+                  border-radius: 10px;
+                  color: #fff;
+                  background-color: #F2A92F;
+                  border: none;
+                  
+                      
+              }
+              .required::after
+              {
+                  content: " *";
+                  color: red;
+              }
+
+ /*-----RODAPÉ------*/
+
+             footer{
+                justify-content: center;
+                text-align: center;
+                background-color: #162461;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #fff;
+                font-size: 1em;
+                align-items: center;
+                height: 80px;
+                position: absolute;
+                bottom: 0;
+                color: #FFF;
+                width: 100%;
+                height: 50px;
+              }
+
+/* ---media queries menu responsivo--- */
+              @media screen and (max-width: 1680px){
+                  .links_access{
+              
+                      margin-left: 45%;
+                  }
+              }
+              @media screen and (max-width: 1345px){
+                  .links_access{
+              
+                      margin-left: 40%;
+                  }
+              }
+              @media screen and (max-width: 1230px){
+                  .links_access{
+              
+                      margin-left: 30%;
+                  }
+              }
+              @media screen and (max-width: 1024px){
+                  .links_access{
+              
+                      margin-left: 25%;
+                  }
+              }
+              @media screen and (max-width: 850px){
+              
+                  .atalhos{
+                      display: none;
+                  }
+                  .links_access{
+                      margin: auto;
+                  }
+              }
+                
+              @media screen and (max-width: 740px){
+              
+                  nav{
+                      justify-content: left;
+                  }
+                  .menu{
+                      display: none;
+                  }
+              
+                  label[for="bt_menu"]{
+                      display: block;
+                      margin: 2%;
+                  }
+              
+                  #bt_menu:checked ~ .menu{
+                      display: block;
+                      width: 100%; /*corrigido*/
+              
+                     
+                     
+                  }
+              
+                  .menu li{
+                      padding: 5% 1px; /*corrigido*/
+                      
+                      
+                  }
+                 
+                  .menu li ul{
+                      position:static; /*acrescentado*/
+                      
+                  }
+                  .menu li ul li{
+                      position: relative; /*acrescentado*/
+                      display: block; /*acrescentado*/
+              
+                  }
+                #logo
+                {
+                    
+                    margin-top: 10%;
+                }
+
+              }
+              
